@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:minimalecommerce/core/utils/app_images.dart';
+import 'package:minimalecommerce/models/product_model.dart';
 import 'package:minimalecommerce/views/widgets/product_item.dart';
 
 class ProductItemGridview extends StatelessWidget {
@@ -8,6 +10,28 @@ class ProductItemGridview extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    List<ProductModel> item = [
+      ProductModel(
+          name: 'SONY Premium Wireless Headphones',
+          price: r'$349.99',
+          model: 'Model: WH-1000XM4, Black',
+          image: Assets.imagesHeadphoneB),
+      ProductModel(
+          name: 'SONY Premium Wireless Headphones',
+          price: r'$349.99',
+          model: 'Model: WH-1000XM4, Black',
+          image: Assets.imagesHeadphoneW),
+      ProductModel(
+          name: 'SONY Premium Wireless Headphones',
+          price: r'$349.99',
+          model: 'Model: WH-1000XM4, Black',
+          image: Assets.imagesHeadphoneB),
+      ProductModel(
+          name: 'SONY Premium Wireless Headphones',
+          price: r'$349.99',
+          model: 'Model: WH-1000XM4, Black',
+          image: Assets.imagesHeadphoneW),
+    ];
     return GridView.builder(
       physics: NeverScrollableScrollPhysics(),
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -17,7 +41,9 @@ class ProductItemGridview extends StatelessWidget {
         childAspectRatio: 0.6,
       ),
       itemCount: 4,
-      itemBuilder: (context, index) => ProductItem(),
+      itemBuilder: (context, index) => ProductItem(
+        productModel: item[index],
+      ),
     );
   }
 }

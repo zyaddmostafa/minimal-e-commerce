@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_icon_class/font_awesome_icon_class.dart';
-import 'package:minimalecommerce/core/utils/app_styles.dart';
 import 'package:minimalecommerce/views/widgets/custom_text_field.dart';
-import 'package:minimalecommerce/views/widgets/search_item.dart';
 import 'package:minimalecommerce/views/widgets/search_item_list_view.dart';
 
 class SearchView extends StatelessWidget {
@@ -21,7 +18,9 @@ class SearchView extends StatelessWidget {
           SizedBox(
             height: 32,
           ),
-          Expanded(child: SearchItemListView()),
+          Expanded(
+            child: SearchItemListView(),
+          ),
         ],
       ),
     );
