@@ -18,6 +18,14 @@ class Assets {
   /// assets/images/applepay.svg
   static const String imagesApplepay = "assets/images/applepay.svg";
 
+  /// Assets for imagesCart
+  /// assets/images/cart.svg
+  static const String imagesCart = "assets/images/cart.svg";
+
+  /// Assets for imagesCartt
+  /// assets/images/cartt.png
+  static const String imagesCartt = "assets/images/cartt.png";
+
   /// Assets for imagesGoogleHome
   /// assets/images/GoogleHome.png
   static const String imagesGoogleHome = "assets/images/GoogleHome.png";
@@ -57,6 +65,10 @@ class Assets {
   /// Assets for imagesPaypal
   /// assets/images/paypal.svg
   static const String imagesPaypal = "assets/images/paypal.svg";
+
+  /// Assets for imagesPoints
+  /// assets/images/points.png
+  static const String imagesPoints = "assets/images/points.png";
 
   /// Assets for imagesSonyCamera
   /// assets/images/Sony_Camera.png

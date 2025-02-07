@@ -1,8 +1,8 @@
 class ProductModel {
-  final String name, price, model, image;
+  final String title, price, model, image;
 
   const ProductModel(
-      {required this.name,
+      {required this.title,
       required this.price,
       required this.model,
       required this.image});

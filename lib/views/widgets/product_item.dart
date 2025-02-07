@@ -26,7 +26,7 @@ class ProductItem extends StatelessWidget {
         ),
         Text(
           softWrap: true,
-          productModel.name,
+          productModel.title,
           style: AppStyles.stylesMediam14.copyWith(fontSize: 14.sp),
         ),
         Text(

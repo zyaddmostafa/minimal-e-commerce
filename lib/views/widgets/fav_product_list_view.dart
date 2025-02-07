@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:minimalecommerce/core/utils/app_images.dart';
 import 'package:minimalecommerce/models/product_model.dart';
-import 'package:minimalecommerce/views/widgets/product_item.dart';
+import 'package:minimalecommerce/views/widgets/fav_product_item.dart';
 
-class ProductItemGridview extends StatelessWidget {
-  const ProductItemGridview({
-    super.key,
-  });
+class FavProductListView extends StatelessWidget {
+  const FavProductListView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,30 +18,35 @@ class ProductItemGridview extends StatelessWidget {
           title: 'SONY Premium Wireless Headphones',
           price: r'$349.99',
           model: 'Model: WH-1000XM4, Black',
-          image: Assets.imagesHeadphoneW),
+          image: Assets.imagesMic2),
       ProductModel(
           title: 'SONY Premium Wireless Headphones',
           price: r'$349.99',
           model: 'Model: WH-1000XM4, Black',
-          image: Assets.imagesAirpodsB),
+          image: Assets.imagesXiaomiWatch),
+      ProductModel(
+          title: 'SONY Premium Wireless Headphones',
+          price: r'$349.99',
+          model: 'Model: WH-1000XM4, Black',
+          image: Assets.imagesGoogleHome),
+      ProductModel(
+          title: 'SONY Premium Wireless Headphones',
+          price: r'$349.99',
+          model: 'Model: WH-1000XM4, Black',
+          image: Assets.imagesSonyCamera),
       ProductModel(
           title: 'SONY Premium Wireless Headphones',
           price: r'$349.99',
           model: 'Model: WH-1000XM4, Black',
           image: Assets.imagesAirpodsW),
     ];
-    return GridView.builder(
-      physics: NeverScrollableScrollPhysics(),
-      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 2,
-        crossAxisSpacing: 15,
-        mainAxisSpacing: 16,
-        childAspectRatio: 0.6,
-      ),
-      itemCount: 4,
-      itemBuilder: (context, index) => ProductItem(
-        productModel: item[index],
-      ),
-    );
+    return ListView.builder(
+        itemCount: item.length,
+        itemBuilder: (context, index) => Padding(
+              padding: const EdgeInsets.only(bottom: 16),
+              child: FavProductItem(
+                productModel: item[index],
+              ),
+            ));
   }
 }
