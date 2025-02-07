@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:minimalecommerce/core/utils/app_styles.dart';
+import 'package:minimalecommerce/views/cart_view.dart';
 import 'package:minimalecommerce/views/fav_view.dart';
 import 'package:minimalecommerce/views/home_view.dart';
 import 'package:minimalecommerce/views/search_view.dart';
-import 'package:minimalecommerce/views/widgets/product_desc.dart';
 
 class BottomNavBar extends StatefulWidget {
   const BottomNavBar({super.key});
@@ -19,7 +19,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
     HomeView(),
     SearchView(),
     FavView(),
-    ProductDesc(),
+    CartView(),
     HomeView(),
   ];
   void _onItemTapped(int index) {
