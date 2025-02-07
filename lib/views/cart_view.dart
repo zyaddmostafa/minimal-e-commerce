@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:minimalecommerce/core/utils/app_images.dart';
 import 'package:minimalecommerce/core/utils/app_styles.dart';
-import 'package:minimalecommerce/models/product_model.dart';
-import 'package:minimalecommerce/views/widgets/cart_item.dart';
+import 'package:minimalecommerce/models/checkout_price.dart';
 import 'package:minimalecommerce/views/widgets/cart_item_list_view.dart';
-import 'package:minimalecommerce/views/widgets/product_item_info.dart';
+import 'package:minimalecommerce/views/widgets/check_out_price_list.dart';
 
 class CartView extends StatelessWidget {
   const CartView({super.key});
@@ -30,7 +28,29 @@ class CartView extends StatelessWidget {
           ),
           Expanded(
             child: CartItemListView(),
-          )
+          ),
+          Divider(
+            thickness: 1,
+          ),
+          CheckOutPriceList(),
+          SizedBox(
+            height: 11,
+          ),
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              padding: EdgeInsets.symmetric(
+                vertical: 16,
+                horizontal: MediaQuery.of(context).size.width *
+                    0.356, // 20% of screen width
+              ),
+              backgroundColor: Color(0xff212429),
+            ),
+            onPressed: () {},
+            child: Text(
+              'CheckOut',
+              style: AppStyles.stylesRegular14.copyWith(color: Colors.white),
+            ),
+          ),
         ],
       ),
     );
