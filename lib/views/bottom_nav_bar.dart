@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:minimalecommerce/core/utils/app_styles.dart';
 import 'package:minimalecommerce/views/home_view.dart';
+import 'package:minimalecommerce/views/search_view.dart';
 
 class BottomNavBar extends StatefulWidget {
   const BottomNavBar({super.key});
@@ -14,7 +15,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
 
   List pages = [
     HomeView(),
-    HomeView(),
+    SearchView(),
     HomeView(),
     HomeView(),
     HomeView(),

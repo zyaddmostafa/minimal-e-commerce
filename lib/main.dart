@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:minimalecommerce/views/widgets/bottom_nav_bar.dart';
+import 'package:minimalecommerce/views/bottom_nav_bar.dart';
 
 void main() {
   runApp(const MyApp());
