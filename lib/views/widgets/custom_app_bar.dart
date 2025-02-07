@@ -11,7 +11,11 @@ class CustomAppBar extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Icon(Icons.arrow_back_ios_new_outlined, size: 18),
+        GestureDetector(
+            onTap: () {
+              Navigator.pop(context);
+            },
+            child: Icon(Icons.arrow_back_ios_new_outlined, size: 18)),
         Text(
           'Headphones',
           style: AppStyles.stylesBold14.copyWith(fontSize: 14),

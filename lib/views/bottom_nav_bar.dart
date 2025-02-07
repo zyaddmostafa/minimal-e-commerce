@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:minimalecommerce/core/utils/app_styles.dart';
-import 'package:minimalecommerce/views/fav_view.dart';
+import 'package:minimalecommerce/views/widgets/filtered_product.dart';
 import 'package:minimalecommerce/views/home_view.dart';
 import 'package:minimalecommerce/views/search_view.dart';
 
@@ -17,7 +17,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
   List pages = [
     HomeView(),
     SearchView(),
-    FavView(),
+    FilteredProduct(),
     HomeView(),
     HomeView(),
   ];

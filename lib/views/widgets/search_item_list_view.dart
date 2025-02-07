@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:minimalecommerce/views/widgets/filtered_product.dart';
 import 'package:minimalecommerce/views/widgets/search_item.dart';
 
 class SearchItemListView extends StatelessWidget {
@@ -21,8 +22,14 @@ class SearchItemListView extends StatelessWidget {
     ];
     return ListView.builder(
       itemCount: items.length,
-      itemBuilder: (context, index) => SearchItem(
-        title: items[index],
+      itemBuilder: (context, index) => GestureDetector(
+        onTap: () {
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) => FilteredProduct()));
+        },
+        child: SearchItem(
+          title: items[index],
+        ),
       ),
     );
   }
