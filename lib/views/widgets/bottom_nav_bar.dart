@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:minimalecommerce/core/utils/app_styles.dart';
 import 'package:minimalecommerce/views/home_view.dart';
 
 class BottomNavBar extends StatefulWidget {
@@ -37,7 +38,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.search),
-              label: 'Search',
+              label: 'Browse',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.favorite),
@@ -54,6 +55,10 @@ class _BottomNavBarState extends State<BottomNavBar> {
           ],
           currentIndex: _selectedIndex,
           selectedItemColor: Colors.black,
+          selectedLabelStyle:
+              AppStyles.stylesRegular10.copyWith(color: Color(0xff212429)),
+          unselectedLabelStyle:
+              AppStyles.stylesRegular10.copyWith(color: Color(0xffF5F5F5)),
           onTap: _onItemTapped,
         ),
         body: pages[_selectedIndex],
