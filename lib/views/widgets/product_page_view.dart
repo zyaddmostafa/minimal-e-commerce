@@ -12,7 +12,10 @@ class ProductPageView extends StatelessWidget {
       scrollDirection: Axis.horizontal,
       children: List.generate(
         3,
-        (index) => ProductPageViewItem(),
+        (index) => Padding(
+          padding: const EdgeInsets.only(right: 16),
+          child: ProductPageViewItem(),
+        ),
       ),
     );
   }

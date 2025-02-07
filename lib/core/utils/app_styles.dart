@@ -20,6 +20,7 @@ class AppStyles {
   static TextStyle stylesRegular10 = TextStyle(
     fontFamily: 'Inter',
     fontWeight: FontWeight.w400,
+    fontSize: 10.sp,
   );
   static TextStyle stylesSemiBold20 = TextStyle(
     fontFamily: 'Inter',

@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:minimalecommerce/core/utils/app_images.dart';
+import 'package:minimalecommerce/core/utils/app_styles.dart';
 import 'package:minimalecommerce/views/widgets/home_view_header.dart';
+import 'package:minimalecommerce/views/widgets/product_item_grid_view.dart';
 import 'package:minimalecommerce/views/widgets/product_page_view_section.dart';
 
 class HomeView extends StatelessWidget {
@@ -13,6 +17,7 @@ class HomeView extends StatelessWidget {
         body: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               HomeViewHeader(),
               SizedBox(
@@ -20,7 +25,14 @@ class HomeView extends StatelessWidget {
               ),
               ProductPageViewSection(),
               SizedBox(
-                height: 42,
+                height: 32,
+              ),
+              Text('Recommended for you', style: AppStyles.stylesSemiBold20),
+              SizedBox(
+                height: 8,
+              ),
+              Expanded(
+                child: ProductItemGridview(),
               ),
             ],
           ),
