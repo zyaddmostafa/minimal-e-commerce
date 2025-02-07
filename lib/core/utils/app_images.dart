@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_single_quotes
 class Assets {
   Assets._();
-  
+
   /// Assets for imagesAirpodsB
   /// assets/images/airpodsB.png
   static const String imagesAirpodsB = "assets/images/airpodsB.png";
@@ -11,16 +11,12 @@ class Assets {
   static const String imagesAirpodsW = "assets/images/airpodsW.png";
 
   /// Assets for imagesAmex
-  /// assets/images/Amex.svg
-  static const String imagesAmex = "assets/images/Amex.svg";
+  /// assets/images/Amex.png
+  static const String imagesAmex = "assets/images/Amex.png";
 
-  /// Assets for imagesApplepay
-  /// assets/images/applepay.svg
-  static const String imagesApplepay = "assets/images/applepay.svg";
-
-  /// Assets for imagesCart
-  /// assets/images/cart.svg
-  static const String imagesCart = "assets/images/cart.svg";
+  /// Assets for imagesApay
+  /// assets/images/apay.png
+  static const String imagesApay = "assets/images/apay.png";
 
   /// Assets for imagesCartt
   /// assets/images/cartt.png
@@ -31,8 +27,8 @@ class Assets {
   static const String imagesGoogleHome = "assets/images/GoogleHome.png";
 
   /// Assets for imagesGpay
-  /// assets/images/gpay.svg
-  static const String imagesGpay = "assets/images/gpay.svg";
+  /// assets/images/gpay.png
+  static const String imagesGpay = "assets/images/gpay.png";
 
   /// Assets for imagesHeadphoneB
   /// assets/images/headphoneB.png
@@ -50,9 +46,12 @@ class Assets {
   /// assets/images/ImageContainer.png
   static const String imagesImageContainer = "assets/images/ImageContainer.png";
 
+  /// Assets for imagesMaster
+  /// assets/images/master.png
+  static const String imagesMaster = "assets/images/master.png";
+
   /// Assets for imagesMastercard
   /// assets/images/mastercard.svg
-  static const String imagesMastercard = "assets/images/mastercard.svg";
 
   /// Assets for imagesMic1
   /// assets/images/mic1.png
@@ -63,8 +62,8 @@ class Assets {
   static const String imagesMic2 = "assets/images/mic2.png";
 
   /// Assets for imagesPaypal
-  /// assets/images/paypal.svg
-  static const String imagesPaypal = "assets/images/paypal.svg";
+  /// assets/images/paypal.png
+  static const String imagesPaypal = "assets/images/paypal.png";
 
   /// Assets for imagesPoints
   /// assets/images/points.png
@@ -74,8 +73,11 @@ class Assets {
   /// assets/images/Sony_Camera.png
   static const String imagesSonyCamera = "assets/images/Sony_Camera.png";
 
+  /// Assets for imagesVisa
+  /// assets/images/visa.png
+  static const String imagesVisa = "assets/images/visa.png";
+
   /// Assets for imagesXiaomiWatch
   /// assets/images/Xiaomi_Watch.png
   static const String imagesXiaomiWatch = "assets/images/Xiaomi_Watch.png";
 }
-
