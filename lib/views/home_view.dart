@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:minimalecommerce/core/utils/app_images.dart';
 import 'package:minimalecommerce/core/utils/app_styles.dart';
 import 'package:minimalecommerce/views/widgets/home_view_header.dart';
 import 'package:minimalecommerce/views/widgets/product_item_grid_view.dart';
@@ -12,31 +10,30 @@ class HomeView extends StatelessWidget {
   @override
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        body: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              HomeViewHeader(),
-              SizedBox(
-                height: 36,
-              ),
-              ProductPageViewSection(),
-              SizedBox(
-                height: 32,
-              ),
-              Text('Recommended for you', style: AppStyles.stylesSemiBold20),
-              SizedBox(
-                height: 8,
-              ),
-              Expanded(
-                child: ProductItemGridview(),
-              ),
-            ],
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 20),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          HomeViewHeader(),
+          SizedBox(
+            height: 36,
           ),
-        ),
+          ProductPageViewSection(),
+          SizedBox(
+            height: 32,
+          ),
+          Text(
+            'Recommended for you',
+            style: AppStyles.stylesSemiBold20,
+          ),
+          SizedBox(
+            height: 8,
+          ),
+          Expanded(
+            child: ProductItemGridview(),
+          ),
+        ],
       ),
     );
   }

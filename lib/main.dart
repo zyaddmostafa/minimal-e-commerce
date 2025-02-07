@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:minimalecommerce/views/home_view.dart';
+import 'package:minimalecommerce/views/widgets/bottom_nav_bar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       splitScreenMode: true,
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: HomeView(),
+        home: BottomNavBar(),
       ),
     );
   }
