@@ -34,6 +34,10 @@ class Assets {
   /// assets/images/headphoneW.png
   static const String imagesHeadphoneW = "assets/images/headphoneW.png";
 
+  /// Assets for imagesIcon
+  /// assets/images/icon.svg
+  static const String imagesIcon = "assets/images/icon.svg";
+
   /// Assets for imagesImageContainer
   /// assets/images/ImageContainer.png
   static const String imagesImageContainer = "assets/images/ImageContainer.png";
