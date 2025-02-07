@@ -18,25 +18,28 @@ class _CategoryItemListViewState extends State<CategoryItemListView> {
   ];
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      scrollDirection: Axis.horizontal,
-      itemCount: categories.length,
-      itemBuilder: (context, index) {
-        return GestureDetector(
-          onTap: () {
-            setState(() {
-              selectedIndex = index;
-            });
-          },
-          child: Padding(
-            padding: const EdgeInsets.only(right: 32),
-            child: CategoryItem(
-                categories: categories,
-                selectedIndex: selectedIndex,
-                categoriesindex: index),
-          ),
-        );
-      },
+    return SizedBox(
+      height: 29,
+      child: ListView.builder(
+        scrollDirection: Axis.horizontal,
+        itemCount: categories.length,
+        itemBuilder: (context, index) {
+          return GestureDetector(
+            onTap: () {
+              setState(() {
+                selectedIndex = index;
+              });
+            },
+            child: Padding(
+              padding: const EdgeInsets.only(right: 32),
+              child: CategoryItem(
+                  categories: categories,
+                  selectedIndex: selectedIndex,
+                  categoriesindex: index),
+            ),
+          );
+        },
+      ),
     );
   }
 }

@@ -42,6 +42,10 @@ class Assets {
   /// assets/images/mastercard.svg
   static const String imagesMastercard = "assets/images/mastercard.svg";
 
+  /// Assets for imagesMic1
+  /// assets/images/mic1.png
+  static const String imagesMic1 = "assets/images/mic1.png";
+
   /// Assets for imagesMic2
   /// assets/images/mic2.svg
   static const String imagesMic2 = "assets/images/mic2.svg";
