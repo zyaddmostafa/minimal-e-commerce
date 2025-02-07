@@ -25,12 +25,12 @@ class ProductItemGridview extends StatelessWidget {
           name: 'SONY Premium Wireless Headphones',
           price: r'$349.99',
           model: 'Model: WH-1000XM4, Black',
-          image: Assets.imagesHeadphoneB),
+          image: Assets.imagesAirpodsB),
       ProductModel(
           name: 'SONY Premium Wireless Headphones',
           price: r'$349.99',
           model: 'Model: WH-1000XM4, Black',
-          image: Assets.imagesHeadphoneW),
+          image: Assets.imagesAirpodsW),
     ];
     return GridView.builder(
       physics: NeverScrollableScrollPhysics(),
